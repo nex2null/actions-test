@@ -20,3 +20,11 @@ jobs:
       run: |
         import platform
         print(platform.processor())
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+    - name: directory powershell
+      run: Get-Location
+    - name: directory bash
+      shell: bash
+      run: pwd

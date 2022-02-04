@@ -22,6 +22,8 @@ jobs:
         print(platform.processor())
   run-windows-commands:
     runs-on: windows-latest
+    needs:
+    - run-shell-command
     steps:
     - name: directory powershell
       run: Get-Location

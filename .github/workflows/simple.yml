@@ -15,3 +15,8 @@ jobs:
         npm -v
         echo "Workman"
         echo "Rules"
+    - name: python command
+      shell: python
+      run: |
+        import platform
+        print(platform.processor())
